@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mqh-I6-3LG">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <scene sceneID="qUA-yM-0E2">
+            <objects>
+                <viewController title="About" id="P0v-f5-FOH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NWZ-n6-eA7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="uSh-fv-aIc">
+                                <rect key="frame" x="16" y="84" width="288" height="464"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">This app aims to provide travel information for fans travelling to events at Hampden Park.
+    
+All directions given in this app are taken from either maps or personal experience.  Please contact us if you think the directions are wrong or can provide clearer routes to the stadium.
+
+This app is not affiliated with Hampden Park or the Scottish FA, and neither has provided any information for this app.  Stadium Infomation is linked from the www.wikipedia.org website.
+
+For more information see our website www.phone-app.co.uk
+
+©2012-2019. Version 3.0</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kMA-qK-r4D" firstAttribute="trailing" secondItem="uSh-fv-aIc" secondAttribute="trailing" constant="16" id="Lhw-9W-pW0"/>
+                            <constraint firstItem="uSh-fv-aIc" firstAttribute="leading" secondItem="kMA-qK-r4D" secondAttribute="leading" constant="16" id="dbV-4L-Ra9"/>
+                            <constraint firstItem="kMA-qK-r4D" firstAttribute="bottom" secondItem="uSh-fv-aIc" secondAttribute="bottom" constant="20" id="eSz-Rq-L7m"/>
+                            <constraint firstItem="uSh-fv-aIc" firstAttribute="top" secondItem="kMA-qK-r4D" secondAttribute="top" constant="20" id="tgk-ai-cPh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kMA-qK-r4D"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hN-xS-xQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830" y="17"/>
+        </scene>
+        <!--By Train-->
+        <scene sceneID="RIE-Sa-6dP">
+            <objects>
+                <viewController title="By Train" id="TV5-KQ-OD4" customClass="ByTrainViewController" customModule="Hampden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NR2-4K-sNg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tpf-1X-Fz8">
+                                <rect key="frame" x="16" y="84" width="288" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Mount Florida and Kings Park stations are both a five minute walk from the ground.  Both stations are around 15 minutes from Glasgow Central.
+
+From Mount Florida, exit onto Florida Drive and walk down Bolton Drive.  Cross over Cathcart Road, and walk down Sommerville Drive to the ground.
+
+From Kings Park, exit onto Kings Park Avenue turn left and walk down to Aikenhead Road. Turn right and walk down Aikenhead Road to the ground.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWY-qD-Bfy" userLabel="AdViewByTrain" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="508" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="3sv-m1-CGY"/>
+                                    <constraint firstAttribute="height" constant="50" id="pPt-Q1-ABe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fcU-zb-xJ6" firstAttribute="trailing" secondItem="tpf-1X-Fz8" secondAttribute="trailing" constant="16" id="MvY-mu-dmd"/>
+                            <constraint firstItem="iWY-qD-Bfy" firstAttribute="centerX" secondItem="NR2-4K-sNg" secondAttribute="centerX" id="dLO-14-51e"/>
+                            <constraint firstItem="tpf-1X-Fz8" firstAttribute="leading" secondItem="fcU-zb-xJ6" secondAttribute="leading" constant="16" id="eaZ-Yt-gaD"/>
+                            <constraint firstItem="fcU-zb-xJ6" firstAttribute="bottom" secondItem="iWY-qD-Bfy" secondAttribute="bottom" constant="10" id="gB1-5Y-rIh"/>
+                            <constraint firstItem="tpf-1X-Fz8" firstAttribute="top" secondItem="fcU-zb-xJ6" secondAttribute="top" constant="20" id="h3o-JS-SCP"/>
+                            <constraint firstItem="iWY-qD-Bfy" firstAttribute="top" secondItem="tpf-1X-Fz8" secondAttribute="bottom" constant="10" id="vme-Te-dL7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fcU-zb-xJ6"/>
+                    </view>
+                    <connections>
+                        <outlet property="AdViewByTrain" destination="iWY-qD-Bfy" id="BVC-lq-JUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LT9-A8-75z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="17"/>
+        </scene>
+        <!--By Road-->
+        <scene sceneID="ldD-eR-Pvj">
+            <objects>
+                <viewController title="By Road" id="C4h-rp-Zqq" customClass="ByRoadViewController" customModule="Hampden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eGl-0M-xtk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="AIK-QN-CUi">
+                                <rect key="frame" x="16" y="84" width="288" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Hampden Park is not an easy venue to visit by road, with very limited parking available in the area.
+
+Exit the M74 at Junction 1A and take the B763 Polmadie Road.  Continue south on Polmadie Road, which eventually becomes the A728 Aikenhead Road.
+
+The ground is on Aikenhead Road, on the right after Curling Crescent.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVy-Ba-j9M" userLabel="AdViewByRoad" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="508" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="RyL-w4-ay8"/>
+                                    <constraint firstAttribute="height" constant="50" id="VLz-E2-ZIk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AIK-QN-CUi" firstAttribute="leading" secondItem="ifJ-4R-J7F" secondAttribute="leading" constant="16" id="07Y-UZ-Ygz"/>
+                            <constraint firstItem="bVy-Ba-j9M" firstAttribute="centerX" secondItem="eGl-0M-xtk" secondAttribute="centerX" id="4yy-NX-UPn"/>
+                            <constraint firstItem="bVy-Ba-j9M" firstAttribute="top" secondItem="AIK-QN-CUi" secondAttribute="bottom" constant="10" id="AfO-O6-qNI"/>
+                            <constraint firstItem="ifJ-4R-J7F" firstAttribute="trailing" secondItem="AIK-QN-CUi" secondAttribute="trailing" constant="16" id="PUq-Rx-hus"/>
+                            <constraint firstItem="ifJ-4R-J7F" firstAttribute="bottom" secondItem="bVy-Ba-j9M" secondAttribute="bottom" constant="10" id="kn1-sf-Fyn"/>
+                            <constraint firstItem="AIK-QN-CUi" firstAttribute="top" secondItem="ifJ-4R-J7F" secondAttribute="top" constant="20" id="saP-UH-dQm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ifJ-4R-J7F"/>
+                    </view>
+                    <connections>
+                        <outlet property="AdViewByRoad" destination="bVy-Ba-j9M" id="AZk-ra-Mby"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0N-hx-KvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="-790"/>
+        </scene>
+        <!--Hampden Park Guide-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hampden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImg" translatesAutoresizingMaskIntoConstraints="NO" id="rA7-Qa-XhG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFl-2F-Ybz">
+                                <rect key="frame" x="60" y="84" width="200" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="0.49557221324522477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XVh-b8-O37"/>
+                                    <constraint firstAttribute="width" constant="200" id="rBw-dG-1tR"/>
+                                </constraints>
+                                <state key="normal" title="By Road">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="C4h-rp-Zqq" kind="show" id="fW6-Mp-pxg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlA-ge-L2J">
+                                <rect key="frame" x="60" y="139" width="200" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="0.49557221324522477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="03m-xV-ShU"/>
+                                    <constraint firstAttribute="height" constant="45" id="Zj1-Iy-4aU"/>
+                                </constraints>
+                                <state key="normal" title="By Train">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TV5-KQ-OD4" kind="show" id="aT8-Qb-Jaa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-gK-Jp2">
+                                <rect key="frame" x="60" y="194" width="200" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="0.49557221324522477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Be0-EA-es6"/>
+                                    <constraint firstAttribute="width" constant="200" id="GKa-zF-5Jd"/>
+                                </constraints>
+                                <state key="normal" title="Map">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BLQ-wr-dz4" kind="show" id="Rla-5s-gRo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZ2-f5-JKq">
+                                <rect key="frame" x="60" y="299" width="200" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="0.49557221324522477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BeZ-w6-oRl"/>
+                                    <constraint firstAttribute="width" constant="200" id="jSe-vX-bRO"/>
+                                </constraints>
+                                <state key="normal" title="Food &amp; Drink">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VzD-XO-nRH" kind="show" id="5Bg-sX-0Jf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cm1-59-GAA">
+                                <rect key="frame" x="60" y="354" width="200" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="0.49557221324522477" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="aEm-rB-t1A"/>
+                                    <constraint firstAttribute="width" constant="200" id="z0z-Aq-QuY"/>
+                                </constraints>
+                                <state key="normal" title="Stadium Info">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="P0a-b3-RXl" kind="show" id="jtc-ur-CQM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bG-Ct-GsY" userLabel="AdViewHomePage" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="508" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="kP4-ML-ddp"/>
+                                    <constraint firstAttribute="height" constant="50" id="tqY-hl-Vwe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cm1-59-GAA" firstAttribute="top" secondItem="OZ2-f5-JKq" secondAttribute="bottom" constant="10" id="0iU-PS-Uww"/>
+                            <constraint firstItem="4bG-Ct-GsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bZ-3n-yCO"/>
+                            <constraint firstItem="rA7-Qa-XhG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Bfo-HI-wBN"/>
+                            <constraint firstItem="rA7-Qa-XhG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CwU-lS-X5v"/>
+                            <constraint firstItem="rA7-Qa-XhG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EVf-1A-Vd8"/>
+                            <constraint firstItem="wlA-ge-L2J" firstAttribute="top" secondItem="tFl-2F-Ybz" secondAttribute="bottom" constant="10" id="FEx-FV-qGX"/>
+                            <constraint firstItem="Cm1-59-GAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FYk-Bg-6Gg"/>
+                            <constraint firstItem="wlA-ge-L2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HsG-VD-TJK"/>
+                            <constraint firstItem="OZ2-f5-JKq" firstAttribute="top" secondItem="oFe-gK-Jp2" secondAttribute="bottom" constant="60" id="Rn0-CD-dtj"/>
+                            <constraint firstItem="oFe-gK-Jp2" firstAttribute="top" secondItem="wlA-ge-L2J" secondAttribute="bottom" constant="10" id="SB5-1I-2sF"/>
+                            <constraint firstItem="tFl-2F-Ybz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SIS-bJ-F75"/>
+                            <constraint firstItem="oFe-gK-Jp2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WuK-M3-ete"/>
+                            <constraint firstItem="OZ2-f5-JKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XXO-0X-e5R"/>
+                            <constraint firstItem="oFe-gK-Jp2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZyP-hS-BQa"/>
+                            <constraint firstItem="OZ2-f5-JKq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCF-un-iJI"/>
+                            <constraint firstItem="wlA-ge-L2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tQg-DF-zgc"/>
+                            <constraint firstItem="rA7-Qa-XhG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tUa-Co-U81"/>
+                            <constraint firstItem="tFl-2F-Ybz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vf5-pE-9Uo"/>
+                            <constraint firstItem="Cm1-59-GAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2X-Nu-gy7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4bG-Ct-GsY" secondAttribute="bottom" constant="10" id="yUJ-o5-Onh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hampden Park Guide" id="51a-hv-jgu">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Bnd-C0-99d"/>
+                        <barButtonItem key="rightBarButtonItem" title="About" id="FX7-KB-rpV">
+                            <connections>
+                                <segue destination="P0v-f5-FOH" kind="show" id="Ts2-Fq-lxw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="AdViewHomePage" destination="4bG-Ct-GsY" id="JxM-P4-7tN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828.75" y="792.25352112676057"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="oes-kd-iAo">
+            <objects>
+                <viewController title="Map" id="BLQ-wr-dz4" customClass="MapViewController" customModule="Hampden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l5u-Jl-GIl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfj-6o-wKn">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C9A-4Z-fBK" firstAttribute="trailing" secondItem="Qfj-6o-wKn" secondAttribute="trailing" id="ZTd-cT-eF5"/>
+                            <constraint firstItem="Qfj-6o-wKn" firstAttribute="leading" secondItem="C9A-4Z-fBK" secondAttribute="leading" id="a5m-LX-WTO"/>
+                            <constraint firstItem="C9A-4Z-fBK" firstAttribute="bottom" secondItem="Qfj-6o-wKn" secondAttribute="bottom" id="jNw-LS-rBQ"/>
+                            <constraint firstItem="Qfj-6o-wKn" firstAttribute="top" secondItem="C9A-4Z-fBK" secondAttribute="top" id="tig-l5-Ic6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C9A-4Z-fBK"/>
+                    </view>
+                    <connections>
+                        <outlet property="StadLocMap" destination="Qfj-6o-wKn" id="oRY-9h-jaf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpL-u6-Kvw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="793"/>
+        </scene>
+        <!--Food & Drink-->
+        <scene sceneID="Gc9-eo-iGU">
+            <objects>
+                <viewController title="Food &amp; Drink" id="VzD-XO-nRH" customClass="FoodDrinkViewController" customModule="Hampden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NuT-jZ-isi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="aYG-Cb-hfq">
+                                <rect key="frame" x="16" y="84" width="288" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Alcohol is not available inside Hampden Park.  
+
+There aren't too many options for pubs near Hampden Park, and they all get busy, so the best option is to drink in Glasgow City Centre before heading out to the ground.  Pubs near the ground include 'The Florida Park' (on Battlefield Road), 'Clockwork Beer' (on Cathcart Road), and 'Beechwood' (on Ardmay Crescent).
+
+There are, however, plenty of food options in the area.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3X-qh-UeR" userLabel="AdViewFoodDrink" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="508" width="320" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="YGq-Yr-MkC"/>
+                                    <constraint firstAttribute="height" constant="50" id="due-a6-qKw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aYG-Cb-hfq" firstAttribute="top" secondItem="M8J-ZA-rO2" secondAttribute="top" constant="20" id="7Zm-Gh-bQZ"/>
+                            <constraint firstItem="h3X-qh-UeR" firstAttribute="top" secondItem="aYG-Cb-hfq" secondAttribute="bottom" constant="10" id="8pi-JL-0DL"/>
+                            <constraint firstItem="aYG-Cb-hfq" firstAttribute="leading" secondItem="M8J-ZA-rO2" secondAttribute="leading" constant="16" id="Lye-4W-6xh"/>
+                            <constraint firstItem="h3X-qh-UeR" firstAttribute="centerX" secondItem="NuT-jZ-isi" secondAttribute="centerX" id="WLO-aa-qCQ"/>
+                            <constraint firstItem="M8J-ZA-rO2" firstAttribute="bottom" secondItem="h3X-qh-UeR" secondAttribute="bottom" constant="10" id="Xfs-Mr-NLs"/>
+                            <constraint firstItem="M8J-ZA-rO2" firstAttribute="trailing" secondItem="aYG-Cb-hfq" secondAttribute="trailing" constant="16" id="zHJ-0q-ERw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M8J-ZA-rO2"/>
+                    </view>
+                    <connections>
+                        <outlet property="AdViewFoodDrink" destination="h3X-qh-UeR" id="zTK-Fk-A1J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O6X-iI-4bw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1889" y="1586"/>
+        </scene>
+        <!--Stadium Info-->
+        <scene sceneID="gi0-Ay-BLQ">
+            <objects>
+                <viewController title="Stadium Info" id="P0a-b3-RXl" customClass="StadiumInfoViewController" customModule="Hampden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sX5-a1-p0J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIQ-6A-ilZ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xq6-QG-LMx">
+                                <rect key="frame" x="20" y="249" width="280" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USK-Kd-4MN">
+                                        <rect key="frame" x="105.5" y="10" width="69" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4ly-h9-GOG">
+                                        <rect key="frame" x="130" y="41" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="USK-Kd-4MN" firstAttribute="top" secondItem="xq6-QG-LMx" secondAttribute="top" constant="10" id="E5x-hz-Ooy"/>
+                                    <constraint firstItem="4ly-h9-GOG" firstAttribute="centerX" secondItem="xq6-QG-LMx" secondAttribute="centerX" id="IKq-AS-t3h"/>
+                                    <constraint firstItem="4ly-h9-GOG" firstAttribute="top" secondItem="USK-Kd-4MN" secondAttribute="bottom" constant="10" id="Ih1-Ya-4YO"/>
+                                    <constraint firstAttribute="height" constant="70" id="Zdf-lj-S4x"/>
+                                    <constraint firstItem="USK-Kd-4MN" firstAttribute="centerX" secondItem="xq6-QG-LMx" secondAttribute="centerX" id="ycy-gd-Rb8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cIQ-6A-ilZ" firstAttribute="leading" secondItem="ycc-tR-n4Z" secondAttribute="leading" id="BwI-Lu-7aS"/>
+                            <constraint firstItem="ycc-tR-n4Z" firstAttribute="bottom" secondItem="cIQ-6A-ilZ" secondAttribute="bottom" id="Jwr-fr-O68"/>
+                            <constraint firstItem="ycc-tR-n4Z" firstAttribute="trailing" secondItem="xq6-QG-LMx" secondAttribute="trailing" constant="20" id="Lr8-35-42Q"/>
+                            <constraint firstItem="cIQ-6A-ilZ" firstAttribute="top" secondItem="ycc-tR-n4Z" secondAttribute="top" id="Mf5-v8-igt"/>
+                            <constraint firstItem="xq6-QG-LMx" firstAttribute="centerX" secondItem="sX5-a1-p0J" secondAttribute="centerX" id="fHf-Ze-k1V"/>
+                            <constraint firstItem="xq6-QG-LMx" firstAttribute="leading" secondItem="ycc-tR-n4Z" secondAttribute="leading" constant="20" id="hSh-Zk-64f"/>
+                            <constraint firstItem="xq6-QG-LMx" firstAttribute="centerY" secondItem="sX5-a1-p0J" secondAttribute="centerY" id="owc-vw-uQt"/>
+                            <constraint firstItem="ycc-tR-n4Z" firstAttribute="trailing" secondItem="cIQ-6A-ilZ" secondAttribute="trailing" id="q8r-GC-MC2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ycc-tR-n4Z"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorText" destination="USK-Kd-4MN" id="fTc-cG-P3k"/>
+                        <outlet property="errorView" destination="xq6-QG-LMx" id="y8f-BQ-eZi"/>
+                        <outlet property="loadingSpinner" destination="4ly-h9-GOG" id="yFf-o4-bdH"/>
+                        <outlet property="webView" destination="cIQ-6A-ilZ" id="BZS-Lf-qhU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ekk-Kh-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="785.625" y="1586.6197183098591"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xNP-nu-CUm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mqh-I6-3LG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U6t-8v-eRI">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.63529411759999999" green="0.76470588240000004" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pAq-Tk-RYp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GgZ-YU-0LV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-154.40000000000001" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundImg" width="240" height="339.3599853515625"/>
+    </resources>
+</document>
